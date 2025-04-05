@@ -336,6 +336,11 @@
             videos.forEach((video => observer.observe(video)));
         }
     }));
+    document.addEventListener("fullscreenchange", (function() {
+        const video = document.querySelector(".gallery__video");
+        if (!video) return;
+        if (document.fullscreenElement === video || video.contains(document.fullscreenElement)) video.style.objectFit = "contain"; else video.style.objectFit = "cover";
+    }));
     window["FLS"] = true;
     addLoadedClass();
 })();
