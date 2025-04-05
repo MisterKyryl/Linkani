@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250301161440">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250405203906">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,6 +21,9 @@
 			<div class="decor-blur"></div>
 			<div class="page__language language">
 				<div class="language__container">
+					<a href="#" data-popup="#popup-download" class="language__download">
+						Download
+					</a>
 					<ul class="language__list">
 						<li class="language__item">
 							<a href="privacy-policy-en.html" class="language__link">
@@ -101,7 +104,8 @@
 							<h5 class="privacy-policy__item-title">6. User rights</h5>
 							<p class="privacy-policy__item-description">
 								You have the right to access, correct, or delete your personal data. To exercise these rights, please contact us at the
-								contact details provided below.
+								contact details provided below. Complete and irreversible deletion of all data is possible in the application in the "Profile"
+								section.
 							</p>
 						</li>
 						<li class="privacy-policy__item">
@@ -134,64 +138,34 @@
 					</div>
 				</div>
 			</div>
-			<div id="popup-support" aria-hidden="true" class="support-popup popup">
-				<div class="support-popup__wrapper popup__wrapper">
-					<div class="support-popup__content popup__content">
+			<div id="popup-download" aria-hidden="true" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup-download__content popup__content">
 						<button data-close type="button" class="popup__close">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-width="2" stroke-linecap="square" />
-								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-width="2" stroke-linecap="square" />
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#000" stroke-width="2" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#000" stroke-width="2" stroke-linecap="square" />
 							</svg>
 						</button>
-						<div class="support-popup__body body-support-popup">
-							<ul class="body-support-popup__list">
-								<li class="body-support-popup__item">
-									<div class="body-support-popup__currency">
-										UAH
-									</div>
-									<button type="button" class="body-support-popup__button _button-copy">
-										4441 1110 2260 9006
-										<span class="body-support-popup__button--copy">Copy</span>
-									</button>
-								</li>
-								<li class="body-support-popup__item">
-									<div class="body-support-popup__currency">
-										USD
-									</div>
-									<button type="button" class="body-support-popup__button _button-copy">
-										4441 1110 8112 2362
-										<span class="body-support-popup__button--copy">Copy</span>
-									</button>
-								</li>
-								<li class="body-support-popup__item">
-									<div class="body-support-popup__currency">
-										EUR
-									</div>
-									<button type="button" class="body-support-popup__button _button-copy">
-										4441 1110 9058 9916
-										<span class="body-support-popup__button--copy">Copy</span>
-									</button>
-								</li>
-								<li class="body-support-popup__item">
-									<div class="body-support-popup__currency">
-										USD/EUR
-									</div>
-									<button type="button" class="body-support-popup__button _button-copy">
-										5557 7080 1130 4783
-										<span class="body-support-popup__button--copy">Copy</span>
-									</button>
-								</li>
-							</ul>
-							<div class="body-support-popup__thanks">
-								Thank you!
+						<div class="popup-download__body body-popup-download">
+							<div class="body-popup-download__logo">
+								<img src="img/popup-download/logo.webp" alt="Image">
 							</div>
+							<div class="body-popup-download__title">Linkani</div>
+							<div class="body-popup-download__text">Download</div>
+							<a href="https://apple.co/3DWfm5P" class="body-popup-download__image">
+								<img src="img/popup-download/appstore.svg" alt="Image">
+							</a>
+							<a href="https://play.google.com/store/apps/details?id=com.linkani.prod" class="body-popup-download__image">
+								<img src="img/popup-download/googleplay.webp" alt="Image">
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20250301161440"></script>
+	<script src="js/app.min.js?_v=20250405203906"></script>
 </body>
 
 </html>

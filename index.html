@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250301161440">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250405203906">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,6 +21,9 @@
 			<div class="decor-blur"></div>
 			<div class="page__language language">
 				<div class="language__container">
+					<a href="#" data-popup="#popup-download" class="language__download">
+						Завантажити
+					</a>
 					<ul class="language__list">
 						<li class="language__item">
 							<a href="index-en.html" class="language__link">
@@ -64,7 +67,8 @@
 						</p>
 						<p>
 							Швидко зберігай та знаходь посилання. Особливо корисно для відео. Забудь про зберігання у переписках або на різних платформах.
-							Тепер всі відео з TikTok, Instagram, YouTube та інших збережені в одному місці та зручно розташовані, для швидкого знаходження.
+							Тепер всі відео з TikTok, Instagram, YouTube та інших збережені в одному місці та зручно розташовані, для швидкого
+							знаходження.
 						</p>
 					</div>
 				</div>
@@ -72,14 +76,16 @@
 			<div class="page__gallery gallery">
 				<div class="gallery__container">
 					<ul class="gallery__list">
-						<li class="gallery__item">
+						<li class="gallery__item gallery__item_video">
 							<div class="gallery__image">
-								<img src="img/gallery/01.webp" class="gallery__picture" alt="Image">
+								<video src="img/gallery/video.mp4" class="gallery__video" muted autoplay>
+									Ваш браузер не підтримує відео.
+								</video>
 							</div>
 						</li>
 						<li class="gallery__item">
 							<div class="gallery__image">
-								<img src="img/gallery/02.webp" class="gallery__picture" alt="Image">
+								<img src="img/gallery/01.webp" class="gallery__picture" alt="Image">
 							</div>
 						</li>
 						<li class="gallery__item">
@@ -168,9 +174,34 @@
 					</div>
 				</div>
 			</div>
+			<div id="popup-download" aria-hidden="true" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup-download__content popup__content">
+						<button data-close type="button" class="popup__close">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#000" stroke-width="2" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#000" stroke-width="2" stroke-linecap="square" />
+							</svg>
+						</button>
+						<div class="popup-download__body body-popup-download">
+							<div class="body-popup-download__logo">
+								<img src="img/popup-download/logo.webp" alt="Image">
+							</div>
+							<div class="body-popup-download__title">Linkani</div>
+							<div class="body-popup-download__text">Завантажити</div>
+							<a href="https://apple.co/3DWfm5P" class="body-popup-download__image">
+								<img src="img/popup-download/appstore-ua.svg" alt="Image">
+							</a>
+							<a href="https://play.google.com/store/apps/details?id=com.linkani.prod" class="body-popup-download__image">
+								<img src="img/popup-download/googleplay-ua.webp" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20250301161440"></script>
+	<script src="js/app.min.js?_v=20250405203906"></script>
 </body>
 
 </html>
